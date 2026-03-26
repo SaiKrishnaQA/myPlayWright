@@ -60,7 +60,7 @@ test('ui events', async ({ page }) => {
    //await page.pause()
 })
 
-test.only('child windows handle', async ({ browser }) => {
+test('child windows handle', async ({ browser }) => {
    const context = await browser.newContext()
    const page = await context.newPage()
    const userName = page.locator('#username')
